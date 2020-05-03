@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif';
+}
+
+.menu {
+    font-size: 140%!important;
+    color: black;
+}
+
+.menuItens:hover {
+    color: #fa8406!important;
+}
+
+.dropdownLogin {
+    font-size: 110%!important;
+    color: black;
+}
+
+.header {
+    position: fixed;
+}
