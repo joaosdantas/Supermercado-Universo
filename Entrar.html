@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="20">
+    <script src="acesso.js"></script>
     <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
@@ -68,35 +70,28 @@
 
 
         <div class="container col-md-5">
-            <form class="needs-validation" novalidate>
+            <form name="form" class="needs-validation" novalidate>
                 <div class="form-column">
 
                     <div class="col-md-12 col-md-4 mb-3">
-                        <label for="validationCustom02">E-mail</label>
-                        <input type="email" class="form-control" id="validationCustom02" required>
+                        <label for="acesso.js">E-mail</label>
+                        <input type="email" name="email" class="form-control" id="email" autocomplete="off" required>
                         <div class="valid-feedback">
                             Muito Bem!
                         </div>
                     </div>
                     <div class="col-md-12 col-md-4 mb-3">
-                        <label for="validationCustomUsername">Senha</label>
-                        <input type="password" class="form-control" id="validationCustom02" required>
+                        <label for="acesso.js">Senha</label>
+                        <input type="password" name="senha" class="form-control" id="senha" autocomplete="off" required>
                     </div>
 
                 </div>
-                <div class="form-column">
 
+                <div class="container">
 
+                    <input name="entrar" value="Entrar" class="btn btn-outline-primary" type="button" onClick="acesso(this.form)">
 
-
-
-                    <div class="container">
-                        <a href="index_corrigida.html">
-                            <button class="btn btn-outline-primary" type="submit" style="font-size: 20px;">  
-                                Entrar
-                            </button>
-                        </a>
-                    </div>
+                </div>
             </form>
 
             <script>
@@ -119,7 +114,7 @@
                     }, false);
                 })();
             </script>
-            </div>
+        </div>
         </div>
         <div class="container d-flex justify-content-center" style="margin-top: 5%; ">
             <!-- <a href=" entrar.html " style="text-decoration:none;">
