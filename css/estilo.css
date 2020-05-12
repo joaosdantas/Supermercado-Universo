@@ -15,7 +15,10 @@ body {
 }
 
 .menuItens:hover {
-    color: #fa8406!important;
+    border: 1px solid #fa8406;
+    background-color: #1c6eaf;
+    border-radius: 15px;
+    color: white!important;
 }
 
 .dropdownLogin {
