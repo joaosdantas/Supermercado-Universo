@@ -32,3 +32,34 @@ body {
 
 
 /* COLABORADORES ***************************************/
+
+.tamanho {
+    font-size: 25px;
+}
+
+
+/* vagas ***************************************/
+
+.vagas {
+    padding: 1% 0 2% 0;
+}
+
+.vagasDisponiveis {
+    border: 2px solid #fa8406;
+    background-color: #1c6eaf;
+    border-radius: 15px;
+    color: white!important;
+    padding-bottom: 5%;
+}
+
+.questionario {
+    padding: 5% 0 0 0;
+}
+
+.formatoCheck {
+    padding-left: 40%;
+}
+
+.espaco {
+    margin-top: 5%;
+}

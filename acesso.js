@@ -4,12 +4,12 @@ function acesso(form) {
     form.email.value = form.email.value.toLowerCase()
     form.senha.value = form.senha.value.toLowerCase()
 
-    if (form.email.value == "joao@gmail.com " && form.senha.value == "1@3mudar") {
-        location = "index.html"
+    if (form.email.value == "joao@gmail.com" && form.senha.value == "1@3mudar") {
+        location = "Cadastrar.html"
     } else {
         form.email.value = ""
         form.senha.value = ""
-        alert("Dados Incorretos")
+        alert("Nome ou Senha incorretos!")
     }
 
 }
