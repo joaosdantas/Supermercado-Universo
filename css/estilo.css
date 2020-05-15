@@ -63,3 +63,61 @@ body {
 .espaco {
     margin-top: 5%;
 }
+
+@media(max-width:576px) {
+    /*INDEX******/
+    .primeiraSection {
+        margin-left: 50%;
+    }
+    .primeiraSection h1 {
+        font-size: 250%!important;
+    }
+    .carrossel {
+        display: flex;
+        justify-content: center;
+        width: 250%;
+        padding: 0;
+        margin-left: -65%;
+    }
+    .quemSomos {
+        display: flex;
+        flex-direction: column!important;
+        margin-left: 50%;
+    }
+    .logo {
+        width: 50%!important;
+        height: 50%!important;
+        margin-left: 26%;
+    }
+    .container hr {
+        width: 200%!important;
+    }
+    .localizacao {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50%!important;
+        width: 693px;
+        height: 700px!important;
+    }
+    .mapa {
+        width: 355px!important;
+        height: 260px!important;
+    }
+    .textoMapa {
+        margin-right: 30%;
+        padding-bottom: 10%!important;
+    }
+    .contato {
+        width: 193%;
+    }
+    footer {
+        width: 193%;
+    }
+    /****** RECRUTAMENTO ***********/
+    .conteudoRecrutamento {
+        margin-top: 20%;
+    }
+    .fase1 {
+        width: 193%!important;
+    }
+}
