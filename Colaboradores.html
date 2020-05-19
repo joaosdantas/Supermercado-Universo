@@ -64,58 +64,59 @@
     <hr style=" margin-top:10%;width: 98%; color:  #fa8406; border: 10px solid #fa8406; border-radius: 35%;">
     <section>
 
-        <div class="container d-flex justify-content-center" style="margin-top: 2%;">
-            <h1>Login</h1>
-        </div>
 
 
-        <div class="container col-md-4 ">
-            <form name="form" class="needs-validation tamanho" novalidate>
-                <div class="form-column">
+        <div class="container colaboradores">
+            <div class="container d-flex justify-content-center" style="margin-top: 2%;">
+                <h1>Login</h1>
+            </div>
+            <div class="container col-md-4 ">
+                <form name="form" class="needs-validation tamanho" novalidate>
+                    <div class="form-column">
 
-                    <div class="col-md-12 col-md-4 mb-3">
-                        <label for="acesso.js">Nome Completo</label>
-                        <input type="text" name="email" class="form-control" id="email" autocomplete="off" required>
-                        <div class="valid-feedback">
-                            Muito Bem!
+                        <div class="col-md-12 col-md-4 mb-3">
+                            <label for="acesso.js">Nome Completo</label>
+                            <input type="text" name="email" class="form-control" id="email" autocomplete="off" required>
+                            <div class="valid-feedback">
+                                Muito Bem!
+                            </div>
                         </div>
+                        <div class="col-md-12 col-md-4 mb-3">
+                            <label for="acesso.js">Senha</label>
+                            <input type="password" name="senha" class="form-control" id="senha" autocomplete="off" required>
+                        </div>
+
                     </div>
-                    <div class="col-md-12 col-md-4 mb-3">
-                        <label for="acesso.js">Senha</label>
-                        <input type="password" name="senha" class="form-control" id="senha" autocomplete="off" required>
+
+                    <div class="container">
+
+                        <input name="entrar" value="Entrar" class="btn btn-outline-primary" type="button" onClick="acesso(this.form)">
+
                     </div>
+                </form>
 
-                </div>
-
-                <div class="container">
-
-                    <input name="entrar" value="Entrar" class="btn btn-outline-primary" type="button" onClick="acesso(this.form)">
-
-                </div>
-            </form>
-
-            <script>
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                (function() {
-                    'use strict';
-                    window.addEventListener('load', function() {
-                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                        var forms = document.getElementsByClassName('needs-validation');
-                        // Loop over them and prevent submission
-                        var validation = Array.prototype.filter.call(forms, function(form) {
-                            form.addEventListener('submit', function(event) {
-                                if (form.checkValidity() === false) {
-                                    event.preventDefault();
-                                    event.stopPropagation();
-                                }
-                                form.classList.add('was-validated');
-                            }, false);
-                        });
-                    }, false);
-                })();
-            </script>
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                                form.addEventListener('submit', function(event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
+                </script>
+            </div>
         </div>
-
         <!-- <div class="container d-flex justify-content-center" style="margin-top: 5%; ">
            
             <a class="btn btn-outline-primary" href=" Cadastrar.html " style="width: 50%; font-size: 25px; padding: 2%;">Não tem conta? Cadastre-se aqui </a>

@@ -154,4 +154,10 @@ body {
     .conteudoVagas {
         padding: 2%;
     }
+    .colaboradores {
+        width: 100%!important;
+        margin-bottom: 185%;
+        margin-top: 40%;
+        margin-left: 40%;
+    }
 }
