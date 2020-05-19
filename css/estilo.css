@@ -71,7 +71,7 @@ body {
 
 .fase3 {
     width: 75%;
-    padding-left: 20%;
+    padding-left: 10%;
 }
 
 .botoes {
@@ -144,5 +144,11 @@ body {
     .fase2 {
         margin-top: 10%;
         width: 180%!important;
+    }
+    .fase3 {
+        width: 100%!important;
+        margin-bottom: 100%;
+        margin-top: 40%;
+        margin-left: 40%;
     }
 }
