@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Login | Funcionário</title>
+    <title>Cadastrar | Recrutamento</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                         <a class="nav-link menuItens" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menuItens" ata-toggle="tooltip" data-placement="right" title="Você será redirecionado para outro site!" href="login-recrutamento.html">Recrutamento</a>
+                        <a class="nav-link menuItens" ata-toggle="tooltip" data-placement="right" href="login-recrutamento.html">Recrutamento</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menuItens" href="Colaboradores.html">Colaboradores</a>
@@ -36,7 +36,7 @@
                     <li class="nav-item">
                         <a class="nav-link menuItens" href="#">Comprar</a>
                     </li>
-                    <li class="nav-item dropdown menuItens">
+                    <!-- <li class="nav-item dropdown menuItens">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Login
                   </a>
@@ -54,7 +54,7 @@
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
+            </form> -->
 
         </nav>
 
@@ -65,31 +65,93 @@
     <section>
 
         <div class="container d-flex justify-content-center" style="margin-top: 2%;">
-            <h1>Login</h1>
+            <h1>Cadastro de Canditado</h1>
         </div>
 
 
         <div class="container col-md-5">
-            <form name="form" class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate>
                 <div class="form-column">
 
                     <div class="col-md-12 col-md-4 mb-3">
-                        <label for="acesso.js">E-mail</label>
-                        <input type="email" name="email" class="form-control" id="email" autocomplete="off" required>
+                        <label for="validationCustom02">Nome Completo</label>
+                        <input type="text" class="form-control" id="validationCustom02" autocomplete="off" required>
                         <div class="valid-feedback">
                             Muito Bem!
                         </div>
                     </div>
                     <div class="col-md-12 col-md-4 mb-3">
-                        <label for="acesso.js">Senha</label>
-                        <input type="password" name="senha" class="form-control" id="senha" autocomplete="off" required>
+                        <label for="validationCustom02">E-mail</label>
+                        <input type="email" class="form-control" id="validationCustom02" autocomplete="off" required>
+                        <div class="valid-feedback">
+                            Muito Bem!
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Curriculum (PDF)</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                    <div class="col-md-12 col-md-4 mb-3">
+
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" autocomplete="off">
+
+                        <div class="valid-feedback">
+                            Muito Bem!
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-md-4 mb-3">
+
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity">
+
+                        <div class="valid-feedback">
+                            Muito Bem!
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-md-4 mb-3">
+
+                        <label for="inputState">Estado</label>
+                        <select id="inputState" class="form-control">
+        <option selected>Escolher...</option>
+        <option>...</option>
+      </select>
+
+                        <div class="valid-feedback">
+                            Muito Bem!
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-md-4 mb-3">
+
+                        <label for="inputZip">CEP</label>
+                        <input type="text" class="form-control" id="inputZip">
+
+                        <div class="valid-feedback">
+                            Muito Bem!
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-md-4 mb-3">
+                        <label for="validationCustomUsername">Senha</label>
+                        <input type="password" class="form-control" id="validationCustom02" required>
+                    </div>
+                    <div class="col-md-12 col-md-4 mb-3">
+                        <label for="validationCustomUsername">Repetir Senha</label>
+                        <input type="password" class="form-control" id="validationCustom02" required>
                     </div>
 
                 </div>
 
+
+
+
+
+
                 <div class="container">
 
-                    <input name="entrar" value="Entrar" class="btn btn-outline-primary" type="button" onClick="acesso(this.form)">
+                    <input type="submit" name="entrar" value="Cadastrar" href="recrutamento.html" class="btn btn-outline-primary" onClick="recrutamento.html">
 
                 </div>
             </form>
@@ -115,12 +177,12 @@
                 })();
             </script>
         </div>
-
+        </div>
         <div class="container d-flex justify-content-center" style="margin-top: 5%; ">
             <!-- <a href=" entrar.html " style="text-decoration:none;">
                 <h1>Já é Cadastrado? Então entre aqui</h1>
             </a> -->
-            <a class="btn btn-outline-primary" href=" Cadastrar.html " style="width: 50%; font-size: 25px; padding: 2%;">Não tem conta? Cadastre-se aqui </a>
+            <a class="btn btn-outline-primary" href=" Login-recrutamento.html " style="width: 50%; font-size: 25px; padding: 2%;">Já tem conta? Faça Login aqui </a>
         </div>
     </section>
 

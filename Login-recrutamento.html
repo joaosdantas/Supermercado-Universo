@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Login | Colaborador</title>
+    <title>Login | Funcionário</title>
 </head>
 
 <body>
@@ -28,30 +28,30 @@
                         <a class="nav-link menuItens" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menuItens" href="login-recrutamento.html">Recrutamento</a>
+                        <a class="nav-link menuItens" ata-toggle="tooltip" data-placement="right" title="Você será redirecionado para outro site!" href="login-recrutamento.html">Recrutamento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menuItens" ata-toggle="tooltip" data-placement="right" title="Você será redirecionado para outro site!" href="Colaboradores.html">Colaboradores</a>
+                        <a class="nav-link menuItens" href="Colaboradores.html">Colaboradores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menuItens" href="#">Comprar</a>
                     </li>
-                    <!-- <li class="nav-item dropdown menuItens">
+                    <li class="nav-item dropdown menuItens">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Login
                   </a>
-                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <!-- <div class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <a class="dropdown-item dropdownLogin " href="Entrar.html">Entrar</a>
                             <a class="dropdown-item dropdownLogin" href="Cadastrar.html">Cadastrar</a>
                             <div class="dropdown-divider dropdownLogin"></div>
 
                         </div>
-                    </li> -->
+                    </li>
 
                 </ul>
 
             </div>
-            <!-- <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
             </form> -->
@@ -64,69 +64,70 @@
     <hr style=" margin-top:10%;width: 98%; color:  #fa8406; border: 10px solid #fa8406; border-radius: 35%;">
     <section>
 
-
-
-        <div class="container colaboradores">
-            <div class="container d-flex justify-content-center" style="margin-top: 2%;">
-                <h1>Login</h1>
-            </div>
-            <div class="container col-md-4 ">
-                <form name="form" class="needs-validation tamanho" novalidate>
-                    <div class="form-column">
-
-                        <div class="col-md-12 col-md-4 mb-3">
-                            <label for="acesso.js">Nome Completo</label>
-                            <input type="text" name="email" class="form-control" id="email" autocomplete="off" required>
-                            <div class="valid-feedback">
-                                Muito Bem!
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-md-4 mb-3">
-                            <label for="acesso.js">Senha</label>
-                            <input type="password" name="senha" class="form-control" id="senha" autocomplete="off" required>
-                        </div>
-
-                    </div>
-
-                    <div class="container">
-
-                        <input name="entrar" value="Entrar" class="btn btn-outline-primary" type="button" onClick="acesso(this.form)">
-
-                    </div>
-                </form>
-
-                <script>
-                    // Example starter JavaScript for disabling form submissions if there are invalid fields
-                    (function() {
-                        'use strict';
-                        window.addEventListener('load', function() {
-                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                            var forms = document.getElementsByClassName('needs-validation');
-                            // Loop over them and prevent submission
-                            var validation = Array.prototype.filter.call(forms, function(form) {
-                                form.addEventListener('submit', function(event) {
-                                    if (form.checkValidity() === false) {
-                                        event.preventDefault();
-                                        event.stopPropagation();
-                                    }
-                                    form.classList.add('was-validated');
-                                }, false);
-                            });
-                        }, false);
-                    })();
-                </script>
-            </div>
+        <div class="container d-flex justify-content-center" style="margin-top: 2%;">
+            <h1>Login</h1>
         </div>
-        <!-- <div class="container d-flex justify-content-center" style="margin-top: 5%; ">
-           
-            <a class="btn btn-outline-primary" href=" Cadastrar.html " style="width: 50%; font-size: 25px; padding: 2%;">Não tem conta? Cadastre-se aqui </a>
-        </div> -->
+
+
+        <div class="container col-md-5">
+            <form name="form" class="needs-validation" novalidate>
+                <div class="form-column">
+
+                    <div class="col-md-12 col-md-4 mb-3">
+                        <label for="acesso.js">E-mail</label>
+                        <input type="email" name="email" class="form-control" id="email" autocomplete="off" required>
+                        <div class="valid-feedback">
+                            Muito Bem!
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-md-4 mb-3">
+                        <label for="acesso.js">Senha</label>
+                        <input type="password" name="senha" class="form-control" id="senha" autocomplete="off" required>
+                    </div>
+
+                </div>
+
+                <div class="container">
+
+                    <input name="entrar" value="Entrar" class="btn btn-outline-primary" type="button" onClick="acesso(this.form)">
+
+                </div>
+            </form>
+
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+        </div>
+
+        <div class="container d-flex justify-content-center" style="margin-top: 5%; ">
+            <!-- <a href=" entrar.html " style="text-decoration:none;">
+                <h1>Já é Cadastrado? Então entre aqui</h1>
+            </a> -->
+            <a class="btn btn-outline-primary" href="cadastro-recrutamento.html" style="width: 50%; font-size: 25px; padding: 2%;">Não tem conta? Cadastre-se aqui </a>
+        </div>
     </section>
 
-    <footer style="background-color:black;margin-top: 14%;">
+    <footer style="background-color:black;margin-top: 12%;">
         <div class="container d-flex justify-content-around" style="padding: 2% 0 2% 0;">
             <h5 style="color: #1c6eaf;">Contato: 98 3012-6354 </h5>
-
+            <br>
             <h5 style="color: #1c6eaf;">Copyright &copy;2020 by Supermercado Universo.</h5>
         </div>
     </footer>
